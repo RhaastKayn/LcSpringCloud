@@ -1,0 +1,9 @@
+
+S
+java:S1854"8Remove this useless assignment to local variable "path".(û‹¿ýüÿÿÿÿ
+R
+java:S1854,"<Remove this useless assignment to local variable "checkUrl".(êÒÖ
+D
+java:S1481")Remove this unused "path" local variable.(û‹¿ýüÿÿÿÿ
+C
+java:S1481,"-Remove this unused "checkUrl" local variable.(êÒÖ

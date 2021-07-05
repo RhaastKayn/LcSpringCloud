@@ -1,0 +1,12 @@
+
+f	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‘“
+c	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì„ëı
+K
+java:S1874U"5Remove this use of "setPoolConfig"; it is deprecated.(Ñ§æ
+N
+java:S1874W"3Remove this use of "setHostName"; it is deprecated.(å—êúÿÿÿÿ
+E
+java:S1874Y"/Remove this use of "setPort"; it is deprecated.(´œÇ²
+V	java:S125["<This block of commented-out lines of code should be removed.(áÅ»ûûÿÿÿÿ
+H
+java:S1874]"2Remove this use of "setTimeout"; it is deprecated.(èøÓ

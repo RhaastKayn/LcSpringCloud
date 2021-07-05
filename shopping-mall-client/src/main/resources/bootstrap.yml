@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos # 账号
+        password: nacos # 密码
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        prefix: shopping-mall-client
+        group: DEFAULT_GROUP
+        username: nacos # 账号
+        password: nacos # 密码

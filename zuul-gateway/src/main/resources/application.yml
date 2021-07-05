@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: zuul-gateway
+server:
+  port: 10001
+
+eureka:
+  client:
+    #与Eureka注册服务中心的通信zone和url地址
+    serviceUrl:
+      defaultZone: http://peer3:9001/eureka,http://peer1:9002/eureka,http://peer2:9003/eureka
+
+zuul:
+  #请求路径加前缀，这样配置后，我们通过Zuul网关获取服务时要加上这个前缀，如：http://localhost:10001/gateway/api-b/test/getInfo
+  prefix: /gateway
+  #忽略指定微服务，多个用逗号隔开，使用 '*' 可以忽略所有微服务
+  #ignored-services: '*'
+  ignored-services: eureka-client
+  #Zuul默认会过滤掉请求头的一些敏感信息，所以有可能会丢失cookie，想要关闭默认设置，可以通过空字符来覆盖默认设置
+  sensitive-headers:
+  #所以符合要求的请求都会转到指定服务，如下方的，api-c的所有请求都会转到server-consumer服务上
+  routes:
+    api-c:  #这里的api-c，只是给路由起一个名称，可以随意起名
+      path: /api-c/**
+      serviceId: server-consumer
+      #只关闭api-c这个个路由的请求头过滤
+      sensitive-headers:
+    api-b:
+      path: /api-b/**
+      serviceId: feign-consumer
+    #Zuul网关除了除了支持把服务转到指定微服务外，还可以把服务转到Zuul本身的服务
+    #如下，所以api-a的请求都会转到本身的/test上，比如当我们访问/api-a/hello时，就会访问Zuul本身的/test/hello方法去获取服务
+    api-a:
+      path: /api-a/**
+      url: forward:test

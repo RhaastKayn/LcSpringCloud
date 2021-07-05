@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="zuul-gateway" />
+        <module name="config-client" />
+        <module name="shopping-mall-client" />
+        <module name="shopping-common" />
+        <module name="shopping-mall-service" />
+        <module name="server-consumer" />
+        <module name="eureka-server" />
+        <module name="feign-consumer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LcSpringCloud" options="-parameters" />
+      <module name="config-client" options="" />
+      <module name="config-server" options="" />
+      <module name="eureka-client" options="" />
+      <module name="eureka-server" options="" />
+      <module name="feign-consumer" options="" />
+      <module name="server-consumer" options="" />
+      <module name="shopping-common" options="" />
+      <module name="shopping-mall-client" options="" />
+      <module name="shopping-mall-service" options="" />
+      <module name="zuul-gateway" options="" />
+    </option>
+  </component>
+</project>

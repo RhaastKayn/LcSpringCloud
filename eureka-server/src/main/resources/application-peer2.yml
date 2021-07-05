@@ -1,0 +1,22 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    #应用名称（在注册中显示的）
+    name: eureka-server-peer2
+
+eureka:
+  client:
+    #与Eureka注册服务中心的通信zone和url地址
+    serviceUrl:
+      defaultZone: http://peer1:9002/eureka,http://peer3:9001/eureka
+  instance:
+    hostname: peer2
+  server:
+      #设为false，关闭自我保护，即Eureka server在云心光器件会去统计心跳失败比例在15分钟之内是否低于85%,如果低于85%，EurekaServer
+      #会将这些事例保护起来，让这些事例不会过期，但是在保护器内如果刚哈这个服务提供者非正常下线了，此时服务消费者会拿到一个无效的服务
+      #实例，此时调用会失败，对于这个问题需要服务消费者端有一些容错机制，如重试、断路器等；
+      enable-self-preservation: true
+      #扫描失效服务的间隔时间（单位是毫秒，摩恩是60*1000)，即60s
+      eviction-interval-timer-in-ms: 10000

@@ -1,0 +1,39 @@
+server:
+  port: 19091
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: shopping-mall-client
+  #druid
+  datasource:
+    url: jdbc:mysql://localhost/miaosha?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: password
+
+#Eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:17001/eureka
+  #    fetchRegistry: false
+  instance:
+    instance-id: shopping-mall-client   #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
+feign:
+  hystrix:
+    enabled: false
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 3000000
+
+ribbon:
+  ConnectTimeout: 100000
+  ReadTimeout: 100000
+
+not_need_token_header: true
+test_a: test
+
+

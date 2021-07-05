@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置文件所在git仓库地址，用户名，密码
+          uri: https://gitee.com/mrbird/spring-cloud-config
+          username: xxx
+          password: xxx
+server:
+  port: 12580

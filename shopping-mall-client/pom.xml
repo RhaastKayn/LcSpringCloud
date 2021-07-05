@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- pom模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 引入父工程依赖 -->
+    <parent>
+        <groupId>com.lc</groupId>
+        <artifactId>LcSpringCloud</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <!-- 项目信息 -->
+    <groupId>com.lc</groupId>
+    <artifactId>shopping-mall-client</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>shopping-mall-client</name>
+    <description>Demo project for Spring Boot</description>
+    <!-- 属性设置,不用进行设置，因为父工程的pom文件中进行了统一配置 -->
+    <!--
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    -->
+    <!-- 依赖关系 -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--Redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!-- Nacos配置中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+        <!-- Nacos服务注册 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
+        <!-- Ribbon相关 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+
+        <!-- 消息队列 rabbitMQ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- 引入公共模块 -->
+        <dependency>
+            <groupId>com.lc</groupId>
+            <artifactId>shopping-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--eureka client -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
+<!--        </dependency>-->
+        <!-- 熔断器 hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!-- 编译 -->
+    <build>
+        <!-- 插件 -->
+        <plugins>
+            <!-- maven插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+<!--        <resources>-->
+<!--            <filtering>true</filtering>-->
+<!--            <directory>src/main/resources</directory>-->
+<!--            <includes>-->
+<!--                <include>application.yml</include>-->
+<!--                <include>redis.properties</include>-->
+<!--            </includes>-->
+<!--        </resources>-->
+    </build>
+
+</project>

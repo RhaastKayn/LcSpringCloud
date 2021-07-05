@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: feign-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos # 账号
+        password: nacos # 密码
+server:
+  port: 9010
+
+###使用Nacos 就不用使用Eureka。Nacos相当于Eureka和Config的结合
+#eureka:
+#  client:
+#    service-url:
+#      #defaultZone 这个是不会提示的，此处需要自己写
+#      #实际上属性应该是service-url,这个属性是个map（key-value）格式；当key是defaultZone的时候才能被解析；所以这里没有提示，
+#      #但是自己还需要写一个defaultZone；
+#      defaultZone: http://peer3:9001/eureka,http://peer1:9002/eureka,http://peer2:9003/eureka
+
+
+
+feign:
+  #开启hystrix支持服务降级等功能
+  hystrix:
+    enabled: true
+  #feign支持对请求和响应进行GZIP压缩,并可以指定压缩的请求类型以及压缩的请求大小下限，超过2048才进行压缩
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true

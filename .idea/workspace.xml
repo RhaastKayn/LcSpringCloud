@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="eureka-server:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d22a62b-5a5a-49c8-9c48-e330bb123b95" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rk71nCiKQcM3dEw1bPsc5RYEiz" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shopping-mall-service/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Myprojects\LcSpringCloud\shopping-mall-service\src\main\resources" />
+      <recent name="E:\IdeaProjects\Myprojects\LcSpringCloud\shopping-mall-client\src\main\resources" />
+      <recent name="E:\IdeaProjects\Myprojects\LcSpringCloud\eureka-server\src\main\resources" />
+      <recent name="E:\IdeaProjects\Myprojects\LcSpringCloud\shopping-common\src\main\java\com\lc\shoppingcommon\pojo" />
+      <recent name="E:\IdeaProjects\Myprojects\LcSpringCloud\shopping-mall\src\main\resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.lc.controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lc.shoppingcommon" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lc.shoppingcommon" />
+      <recent name="com.lc" />
+      <recent name="com.lc.redis" />
+      <recent name="com.lc.shoppingcommon.util" />
+      <recent name="com.lc.shoppingmallservice.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ShoppingMallServiceApplication">
+    <configuration name="JApiDocsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lc.feignconsumer.JApiDocsMain" />
+      <module name="feign-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lc.feignconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lc.shoppingmall.teat.TestMain" />
+      <module name="shopping-mall-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lc.shoppingmall.teat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configclient.ConfigClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaClient-peer2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaclient.EurekaClientApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=peer2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaclient.EurekaClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServer-peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaserver.EurekaServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=peer1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServer-peer2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaserver.EurekaServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=peer2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServer-peer3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaserver.EurekaServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=peer3" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.eurekaserver.EurekaServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeignConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="feign-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.feignconsumer.FeignConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.serverconsumer.ServerConsumerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingMallClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shopping-mall-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.shoppingmall.ShoppingMallClientApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingMallServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shopping-mall-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.ShoppingMallServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lc.zuulgateway.ZuulGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JApiDocsMain" />
+      <item itemvalue="Application.TestMain" />
+      <item itemvalue="Spring Boot.EurekaClientApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.EurekaServer-peer1" />
+      <item itemvalue="Spring Boot.EurekaServer-peer2" />
+      <item itemvalue="Spring Boot.EurekaServer-peer3" />
+      <item itemvalue="Spring Boot.ServerConsumerApplication" />
+      <item itemvalue="Spring Boot.EurekaClient-peer2" />
+      <item itemvalue="Spring Boot.FeignConsumerApplication" />
+      <item itemvalue="Spring Boot.ZuulGatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.ConfigClientApplication" />
+      <item itemvalue="Spring Boot.ShoppingMallClientApplication" />
+      <item itemvalue="Spring Boot.ShoppingMallServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ShoppingMallServiceApplication" />
+        <item itemvalue="Application.JApiDocsMain" />
+        <item itemvalue="Application.TestMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d22a62b-5a5a-49c8-9c48-e330bb123b95" name="Default Changelist" comment="" />
+      <created>1619508021033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619508021033</updated>
+      <workItem from="1619508022440" duration="1810000" />
+      <workItem from="1619509871874" duration="791000" />
+      <workItem from="1619510678635" duration="312000" />
+      <workItem from="1619511013051" duration="35284000" />
+      <workItem from="1620267052605" duration="11964000" />
+      <workItem from="1620348747772" duration="1115000" />
+      <workItem from="1620353290115" duration="5725000" />
+      <workItem from="1620369822929" duration="7405000" />
+      <workItem from="1620433579849" duration="6089000" />
+      <workItem from="1620605909014" duration="557000" />
+      <workItem from="1620606498901" duration="599000" />
+      <workItem from="1620779944723" duration="5079000" />
+      <workItem from="1620960687771" duration="7968000" />
+      <workItem from="1621240361665" duration="2171000" />
+      <workItem from="1621243408722" duration="12630000" />
+      <workItem from="1621409185250" duration="4490000" />
+      <workItem from="1621414181430" duration="3686000" />
+      <workItem from="1621578358799" duration="7339000" />
+      <workItem from="1621587271328" duration="35398000" />
+      <workItem from="1622189671174" duration="6602000" />
+      <workItem from="1622423525763" duration="1220000" />
+      <workItem from="1622425505103" duration="486000" />
+      <workItem from="1622426056918" duration="14491000" />
+      <workItem from="1622595988073" duration="672000" />
+      <workItem from="1622597804201" duration="2292000" />
+      <workItem from="1622683805574" duration="590000" />
+      <workItem from="1622699578318" duration="51000" />
+      <workItem from="1622699668012" duration="2118000" />
+      <workItem from="1622703154151" duration="3399000" />
+      <workItem from="1623033646006" duration="610000" />
+      <workItem from="1623035669182" duration="908000" />
+      <workItem from="1623036697866" duration="4855000" />
+      <workItem from="1623112800904" duration="2376000" />
+      <workItem from="1623122310983" duration="11886000" />
+      <workItem from="1623811774574" duration="9596000" />
+      <workItem from="1623834447629" duration="12129000" />
+      <workItem from="1623892379048" duration="155000" />
+      <workItem from="1623892591076" duration="624000" />
+      <workItem from="1623896146927" duration="10000" />
+      <workItem from="1623995811682" duration="750000" />
+      <workItem from="1624002471441" duration="5999000" />
+      <workItem from="1624235882849" duration="109000" />
+      <workItem from="1624236029300" duration="1840000" />
+      <workItem from="1624266755731" duration="218000" />
+      <workItem from="1624267009331" duration="597000" />
+      <workItem from="1624342842074" duration="95000" />
+      <workItem from="1624342972365" duration="596000" />
+      <workItem from="1624344357342" duration="327000" />
+      <workItem from="1624408988512" duration="82000" />
+      <workItem from="1624409117543" duration="3590000" />
+      <workItem from="1624494731910" duration="292000" />
+      <workItem from="1624495065572" duration="596000" />
+      <workItem from="1624498323143" duration="16323000" />
+      <workItem from="1624840808947" duration="251000" />
+      <workItem from="1624841111850" duration="1194000" />
+      <workItem from="1624866390657" duration="592000" />
+      <workItem from="1624867044810" duration="1249000" />
+      <workItem from="1624952830110" duration="1196000" />
+      <workItem from="1625014481709" duration="606000" />
+      <workItem from="1625015186038" duration="6961000" />
+      <workItem from="1625445853056" duration="534000" />
+      <workItem from="1625446439687" duration="697000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-client/src/main/java/com/lc/shoppingmall/client/controller/SeckillClientController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-client/src/main/java/com/lc/shoppingmall/teat/TestMain.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-client/src/main/java/com/lc/shoppingmall/client/controller/SeckillClientController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-service/src/main/java/com/lc/service/GoodsService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-service/src/main/java/com/lc/service/OrderService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-service/src/main/java/com/lc/shoppingcommon/SpringContextUtil.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shopping-mall-service/src/main/java/com/lc/shoppingcommon/SpringContextUtil.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
