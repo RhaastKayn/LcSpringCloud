@@ -18,7 +18,7 @@ import java.util.List;
  * @create 2021/6/8 0008
  * @since 1.0.0
  */
-@FeignClient(value = "shopping-mall-service")
+@FeignClient(value = "shopping-mall-service", contextId = "GoodsController")
 public interface GoodsFeignService {
 
     /**

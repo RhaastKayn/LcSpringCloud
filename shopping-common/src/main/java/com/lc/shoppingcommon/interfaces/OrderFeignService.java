@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 订单Feign
  */
-@FeignClient(value = "shopping-mall-service")
+@FeignClient(value = "shopping-mall-service", contextId = "OrderController")
 public interface OrderFeignService {
 
     /**

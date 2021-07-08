@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @create 2021/5/17 0017
  * @since 1.0.0
  */
-@FeignClient(value = "shopping-mall-service")
+@FeignClient(value = "shopping-mall-service", contextId = "SeckillController")
 public interface SeckillFeignService {
     /**
      * 生成秒杀url
