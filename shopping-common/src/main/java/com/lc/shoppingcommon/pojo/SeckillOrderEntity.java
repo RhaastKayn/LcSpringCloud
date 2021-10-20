@@ -1,5 +1,6 @@
 package com.lc.shoppingcommon.pojo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -15,12 +16,13 @@ import java.io.Serializable;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@ToString
+@ToString(callSuper = true)
 @Table(name = "seckill_order")
 public class SeckillOrderEntity extends BaseEntity implements Serializable {
     private static final long serialVersionUID = -1945215391602395942L;
 
     private Long userId;
     private Long orderId;
+    @JsonProperty("testId")
     private Long goodsId;
 }

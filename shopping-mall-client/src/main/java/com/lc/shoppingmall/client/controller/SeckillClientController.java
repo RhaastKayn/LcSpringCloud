@@ -8,10 +8,13 @@ import com.lc.shoppingcommon.interfaces.SeckillFeignService;
 import com.lc.shoppingcommon.pojo.SeckillOrderEntity;
 import com.lc.shoppingcommon.pojo.UserEntity;
 import com.lc.shoppingcommon.request.result.SrvResult;
+import com.lc.shoppingmall.client.service.SeckillService;
 import com.lc.shoppingmall.rabbitmq.MQReceiver;
 import com.lc.shoppingmall.rabbitmq.MQSender;
 import com.lc.shoppingmall.rabbitmq.SeckillMessage;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -19,7 +22,16 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.OutputStream;
 import java.util.*;
+import java.util.List;
 
 
 /**
@@ -31,6 +43,7 @@ import java.util.*;
 @RestController
 @RequestMapping("/seckill/client")
 @RefreshScope
+@Slf4j
 public class SeckillClientController {
 
     @Value("${test.a}")
@@ -42,6 +55,9 @@ public class SeckillClientController {
     private OrderFeignService orderFeignService;
     @Autowired
     private MQSender mqSender;
+    @Autowired
+    private SeckillService seckillService;
+
 
     private Map<Long, Boolean> seckillOverMap = new HashMap<>();
 
@@ -60,6 +76,29 @@ public class SeckillClientController {
         }
         String path = seckillFeignService.getSeckillPath(goodsId, user);
         return SrvResult.creat(true, path,"success");
+    }
+
+    /**
+     * 生成图片验证码
+     * @param response
+     * @return
+     */
+    @PostMapping("/getSeckillVerifyCode")
+    @ResponseBody
+    public SrvResult<String> getSeckillVerifyCode(HttpServletResponse response) {
+        try {
+            //验证码图片
+            BufferedImage image = seckillService.creatSeckillVerifyCode();
+            //将验证码图片输出
+            OutputStream outputStream = response.getOutputStream();
+            ImageIO.write(image, "JPEG", outputStream);
+            outputStream.flush();
+            outputStream.close();
+            return SrvResult.creat(true, null);
+        } catch (Exception e) {
+            log.error("生成验证码失败", e);
+            return SrvResult.creat(false, "秒杀失败");
+        }
     }
 
     /**

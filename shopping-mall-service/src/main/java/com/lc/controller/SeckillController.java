@@ -1,14 +1,21 @@
 package com.lc.controller;
 
+import com.lc.redis.RedisService;
 import com.lc.service.GoodsService;
 import com.lc.service.OrderService;
 import com.lc.service.SeckillService;
 import com.lc.shoppingcommon.interfaces.SeckillFeignService;
 import com.lc.shoppingcommon.pojo.UserEntity;
+import com.lc.shoppingcommon.request.result.SrvResult;
+import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 /**
  * @author 刘晨
@@ -26,6 +33,8 @@ public class SeckillController implements SeckillFeignService {
     private OrderService orderService;
     @Autowired
     private GoodsService zoodsService;
+    @Autowired
+    private RedisService redisService;
 
     /**
      * 获取秒杀地址
@@ -71,7 +80,15 @@ public class SeckillController implements SeckillFeignService {
         } else {
             //没有库存了，进行内存标记
         }
+    }
 
-
+    /**
+     * 获取验证码图片
+     * @return
+     */
+    @Override
+    @PostMapping("/setVerifyCodeInRedis")
+    public void setVerifyCodeInRedis(Integer res) {
+        redisService.setRedis("regitser", 300, res);
     }
 }

@@ -2,11 +2,14 @@ package com.lc.shoppingcommon.interfaces;
 
 
 import com.lc.shoppingcommon.pojo.UserEntity;
+import com.lc.shoppingcommon.request.result.SrvResult;
+import com.sun.deploy.net.HttpResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import java.awt.image.BufferedImage;
+
 
 /**
  * @author 刘晨
@@ -39,4 +42,11 @@ public interface SeckillFeignService {
      */
     @PostMapping("/seckill/doSeckill")
     void doSeckill(@RequestBody UserEntity user, @RequestParam("goodsId") Long goodsId);
+
+    /**
+     * 将验证码图片的计算答案存到redis
+     * @param res
+     */
+    @PostMapping(value = "/seckill/setVerifyCodeInRedis")
+    void setVerifyCodeInRedis(@RequestParam("res") Integer res);
 }
